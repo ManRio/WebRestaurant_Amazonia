@@ -1,288 +1,292 @@
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-body{
-    font-family: "Open Sans", sans-serif;
+body {
+  font-family: "Open Sans", sans-serif;
 }
-.contenedor{
-    width: 100%;
-    max-width: 1170px;
-    margin:auto;
+.contenedor {
+  width: 100%;
+  max-width: 1170px;
+  margin: auto;
 }
 
 /* CABECERA */
-header{
-    width: 100%;
-    height: 200px;
-    background-color: #fcfff5;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 5%;
+header {
+  width: 100%;
+  height: 200px;
+  background-color: #fcfff5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
 }
-
-.logo{
-    padding: 25px;
+.contenedor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; /* Esto permite que el contenido se extienda por todo el header */
+  max-width: 1200px; /* Para controlar el ancho máximo */
 }
-.logo img{
-    width: 100px;
-    display: block;
-    margin: auto;
+.logo {
+  padding: 25px;
 }
-.menu{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    max-width: 430px;
-    margin: auto;
+.logo img {
+  width: 100px;
+  display: block;
 }
-.menu a{
-    text-decoration: none;
-    color: #7a7a7a;
-    font-size: 14px;
+.logo img:hover {
+  transform: scale(1.2);
+  transition: 0.5s;
 }
-.menu a:hover{
-    color: #a4281f;
-    transform: scale(1.2);
-    transition: 0.5s;
+.menu {
+  display: flex;
+  gap: 20px;
+}
+.menu a {
+  text-decoration: none;
+  color: #7a7a7a;
+  font-size: 14px;
+}
+.menu a:hover {
+  color: #a4281f;
+  transform: scale(1.2);
+  transition: 0.5s;
 }
 
 /* FIN CABECERA */
 
 /* Banner Principal */
 
-.banner{
-    width: 100%;
-    height: 500px;
-    background-image: url(/images/hamburguesa1.png);
-    background-position: center;
-    background-size: cover;
+.banner {
+  width: 100%;
+  height: 500px;
+  background-image: url(/images/hamburguesa1.png);
+  background-position: center;
+  background-size: cover;
 }
-.banner > div{
-    width: 100%;
-    height: 100%;
-    background-color: rgba(233,175,5,0.5);
+.banner > div {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(233, 175, 5, 0.5);
 }
-.llamada-accion{
-    text-align: center;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
+.llamada-accion {
+  text-align: center;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
 
-    height: 100%;
+  height: 100%;
 }
-.llamada-accion p{
-    font-size: 18px;
-    color: rgb(255, 255, 255);
-    text-transform: uppercase;
-    margin-top: 20px;
-    margin-bottom: 20px;
+.llamada-accion p {
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
-.llamada-accion h2{
-    font-size: 42px;
-    color: rgb(59, 16, 78);
-    width: 100%;
-    padding: 45px 0;
-    background-color: rgba(204, 95, 231, 0.4);
-    max-width: 470px;
+.llamada-accion h2 {
+  font-size: 42px;
+  color: rgb(59, 16, 78);
+  width: 100%;
+  padding: 45px 0;
+  background-color: rgba(204, 95, 231, 0.4);
+  max-width: 470px;
 }
-.llamada-accion a{
-    font-size: 18px;
-    text-decoration: none;
-    color: white;
-    padding: 10px 50px;
-    background-color: rgba(0,0,0,0.47);
-    margin-top: 35px;
-    margin-bottom: 20px;
+.llamada-accion a {
+  font-size: 18px;
+  text-decoration: none;
+  color: white;
+  padding: 10px 50px;
+  background-color: rgba(0, 0, 0, 0.47);
+  margin-top: 35px;
+  margin-bottom: 20px;
 }
-.llamada-accion a:hover{
-    background-color: rgba(0,0,0,0.7);
-    transform: scale(1.1);
-    transition: 0.5s;
+.llamada-accion a:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+  transform: scale(1.1);
+  transition: 0.5s;
 }
-
 
 /* Fin Banner Principal */
 
 /* Seccion Bienvenida */
 
-.bienvenida{
-    width: 100%;
-    background-color: #160419;
-    color: #e9af05;
-    text-align: center;
-    justify-content: center;
+.bienvenida {
+  width: 100%;
+  background-color: #160419;
+  color: #e9af05;
+  text-align: center;
+  justify-content: center;
 }
-.columnasbienvenida{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding-bottom: 20px;
+.columnasbienvenida {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 20px;
 }
-.columnasbienvenida > div{
-    width: 100%;
-    max-width: 370px;
-    padding: 10px;
+.columnasbienvenida > div {
+  width: 100%;
+  max-width: 370px;
+  padding: 10px;
 }
-.columnasbienvenida img{
-    width: 80%;
-    max-width: 600px;
-    padding-bottom: 10px;
+.columnasbienvenida img {
+  width: 80%;
+  max-width: 600px;
+  padding-bottom: 10px;
 }
 
-.bienvenida h2{
-    font-size: 16px;
-    padding-top: 40px;
-    padding-bottom: 35px;
+.bienvenida h2 {
+  font-size: 16px;
+  padding-top: 40px;
+  padding-bottom: 35px;
 }
-.bienvenida p{
-    font-size: 16px;
-    padding-bottom: 35px;
-    line-height: 1.7em;
-    max-width: 370px;
-    margin: auto;
+.bienvenida p {
+  font-size: 16px;
+  padding-bottom: 35px;
+  line-height: 1.7em;
+  max-width: 370px;
+  margin: auto;
 }
 
 /* Fin Seccion Bienvenida */
 
 /* Seccion Nosotros */
 
-.nosotros{
-    padding-bottom: 80px;
-    background-color: #010311;
+.nosotros {
+  padding-bottom: 80px;
+  background-color: #010311;
 }
-.nosotros > .contenedor{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+.nosotros > .contenedor {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
-.foto-hamburguesaSola{
-    width: 100%;
-    max-width: 750px;
+.foto-hamburguesaSola {
+  width: 100%;
+  max-width: 750px;
 }
-.foto-hamburguesaSola img{
-    width: 100%;
+.foto-hamburguesaSola img {
+  width: 100%;
 }
-.conocenos{
-    text-align: center;
-    padding: 15px 0;
-    max-width: 370px;
+.conocenos {
+  text-align: center;
+  padding: 15px 0;
+  max-width: 370px;
 }
-.conocenos p:nth-child(1){
-    font-size: 14px;
-    color: #e9af05;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #a2a2a2;
+.conocenos p:nth-child(1) {
+  font-size: 14px;
+  color: #e9af05;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #a2a2a2;
 }
-.conocenos h3{
-    padding-top: 20px;
-    padding-bottom: 30px;
-    color: #ffffff;
-    font-size: 18px;
+.conocenos h3 {
+  padding-top: 20px;
+  padding-bottom: 30px;
+  color: #ffffff;
+  font-size: 18px;
 }
-.conocenos p:nth-child(3){
-    font-size: 14px;
-    color: #e9af05;
-    padding-bottom: 25px;
+.conocenos p:nth-child(3) {
+  font-size: 14px;
+  color: #e9af05;
+  padding-bottom: 25px;
 }
-.conocenos p:nth-child(4){
-    font-size: 14px;
-    padding-bottom: 20px;
-    color: #ffffff;
+.conocenos p:nth-child(4) {
+  font-size: 14px;
+  padding-bottom: 20px;
+  color: #ffffff;
 }
-.conocenos a{
-    font-size: 14px;
-    color: #ffffff;
+.conocenos a {
+  font-size: 14px;
+  color: #ffffff;
 }
 
-@media all and (min-width: 769px){
-    .nosotros{
-        padding-top: 80px;
-    }
-    .foto-hamburguesaSola{
-        padding-right: 30px;
-    }
-    .conocenos{
-        padding-left: 30px;
-        text-align: left;
-    }
+@media all and (min-width: 769px) {
+  .nosotros {
+    padding-top: 80px;
+  }
+  .foto-hamburguesaSola {
+    padding-right: 30px;
+  }
+  .conocenos {
+    padding-left: 30px;
+    text-align: left;
+  }
 }
 
 /* Fin Seccion Nosotros */
 
 /* Seccion Footer */
 
-.top-footer{
-    background-color: #100115;
-    height: 25px;
+.top-footer {
+  background-color: #100115;
+  height: 25px;
 }
-.center-footer{
-    background-color: #e9af05;
+.center-footer {
+  background-color: #e9af05;
 }
-.center-footer .contenedor{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+.center-footer .contenedor {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
-.center-footer .widget{
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 35px;
-    color: #100115;
-    max-width: 270px;
-    margin: 0 auto;
+.center-footer .widget {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 35px;
+  color: #100115;
+  max-width: 270px;
+  margin: 0 auto;
 }
-.center-footer .widget h4{
-    font-size: 18px;
-    padding-bottom: 35px;
+.center-footer .widget h4 {
+  font-size: 18px;
+  padding-bottom: 35px;
 }
-.center-footer .widget p{
-    font-size: 14px;
+.center-footer .widget p {
+  font-size: 14px;
 }
-.center-footer .widget4{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    text-align: center;
-    justify-content: center;
-    color: #100115;
-    padding-top: 20px;
-    padding-bottom: 35px;
-    max-width: 270px;
+.center-footer .widget4 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  color: #100115;
+  padding-top: 20px;
+  padding-bottom: 35px;
+  max-width: 270px;
 }
-.center-footer .widget4 h4{
-    font-size: 18px;
-    padding-bottom: 35px;
+.center-footer .widget4 h4 {
+  font-size: 18px;
+  padding-bottom: 35px;
 }
-.center-footer .widget4 img{
-    max-width: 35px;
-    max-height: 35px;
-    margin: 10px;
-} 
-.center-footer .widget4 img:hover{
-    transform: scale(1.2);
-    transition: 0.5s;
+.center-footer .widget4 img {
+  max-width: 35px;
+  max-height: 35px;
+  margin: 10px;
 }
-.bottom-footer{
-    background-color: #100115;
-    height: 25px;
+.center-footer .widget4 img:hover {
+  transform: scale(1.2);
+  transition: 0.5s;
 }
-.bottom-footer p{
-    font-size: 12px;
-    text-align: center;
-    color: #e9af05;
+.bottom-footer {
+  background-color: #100115;
+  height: 25px;
+}
+.bottom-footer p {
+  font-size: 12px;
+  text-align: center;
+  color: #e9af05;
 }
 
 /* Fin Seccion Footer */

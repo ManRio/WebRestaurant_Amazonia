@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 function Header() {
   return (
-    <header>
+
     {/*Encabezado*/}
     <header>
         <div className="contenedor">
@@ -21,7 +21,6 @@ function Header() {
         </div>
     </header>
 
-    </header>
   );
 }
 
